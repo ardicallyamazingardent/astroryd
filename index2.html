@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Downloads & Mini-Game</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Available Documents</h1>
+    <p>Click any link below to download the corresponding file:</p>
+
+    <ul>
+        <li>📦 <a href="https://www.mediafire.com/file/aa1k52vyfzjnmen/Siri+AI.zip/file" class="file-link" target="_blank" rel="noopener noreferrer">Download Siri AI (ZIP)</a></li>
+        <li>🎼 <a href="https://archive.org/download/hatsune-miku_v2" class="file-link" target="_blank" rel="noopener noreferrer">Hatsune Miku V2 (Archive.org)</a></li>
+    </ul>
+
+    <!-- Target Shooter Mini-Game -->
+    <div class="game-container">
+        <h3 class="game-title">Mini-Game: Click all 3 targets!</h3>
+        
+        <!-- Checkboxes for Game State -->
+        <input type="checkbox" id="target1">
+        <input type="checkbox" id="target2">
+        <input type="checkbox" id="target3">
+
+        <!-- Game Arena with Targets -->
+        <div class="arena">
+            <label for="target1" class="target target1">🎯</label>
+            <label for="target2" class="target target2">🎯</label>
+            <label for="target3" class="target target3">🎯</label>
+        </div>
+
+        <!-- Scoreboard / Status Message -->
+        <div class="score-board"></div>
+
+        <!-- Reset Button -->
+        <div>
+            <label class="reset-btn" onclick="document.querySelectorAll('.game-container input').forEach(c => c.checked = false)">Play Again</label>
+        </div>
+    </div>
+
+    <div class="profile-section">
+        <p>Follow the creator on TikTok: <a href="https://www.tiktok.com/@astro_ardnt23" class="profile-link" target="_blank" rel="noopener noreferrer">astroryd (@astro_ardnt23)</a></p>
+    </div>
+
+</body>
+</html>
